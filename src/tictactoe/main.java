@@ -84,7 +84,7 @@ public class main {
         for(int i = 0; i < 3; i++){
             for(int j = 0; j < 3; j++) {
                 buttons[i][j] = new JButton("-");
-                buttons[i][j].setPreferredSize(new Dimension(60, 60));
+                buttons[i][j].setPreferredSize(new Dimension(90, 90));
                 board[i][j] = '-';
                 int currentI = i;
                 int currentJ = j;
@@ -112,7 +112,6 @@ public class main {
                 grid.add(buttons[i][j]);
             }
         }
-
         game.add(grid);
         game.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         game.pack();
