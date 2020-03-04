@@ -41,7 +41,6 @@ public class main {
             return true;
         }
         if (board[0][2] == board[1][2] && board[0][2] == board[2][2] && board[0][2] != '-') {
-            System.out.println("You win");
             return true;
         }
         if (board[0][2] == board[1][1] && board[0][2] == board[2][0] && board[0][2] != '-') {
