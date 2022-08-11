@@ -54,10 +54,7 @@ public class main {
         available.
     */
     public static boolean isAvailable(char[][] board, int x, int y){
-        if(board[x][y] == '-'){
-            return true;
-        }
-        return false;
+        return board[x][y] == '-';
     }
     
     /*
@@ -123,7 +120,6 @@ public class main {
     public static int[] computerTurn(char[][] board){
         int[] coordinates = new int[2];
         Random rand = new Random();
-        boolean correct = false;
         int x = rand.nextInt(3);
         int y = rand.nextInt(3);
         while(board[x][y] != '-'){
@@ -148,12 +144,7 @@ public class main {
                 }
             }
         }
-        if(counter == 9){
-            return true;
-        }
-        else{
-            return false;
-        }
+        return counter == 9;
     }
     
 }
